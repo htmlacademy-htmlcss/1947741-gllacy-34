@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Алена Рыбкова](https://up.htmlacademy.ru/htmlcss/34/user/1947741).
-* Наставник: `Неизвестно`.
+- Студент: [Алена Рыбкова](https://up.htmlacademy.ru/htmlcss/34/user/1947741).
+- Наставник: [Ольга Тюлихова] (https://htmlacademy.ru/profile/id523263).
 
 ---
 
