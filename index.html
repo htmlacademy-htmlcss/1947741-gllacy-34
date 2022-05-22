@@ -329,6 +329,51 @@
           <button class="newsletter__btn btn" type="submit">Отправить</button>
         </form>
       </section>
+
+      <section class="delivery">
+        <h2 class="delivery__title">Доставка любимого мороженого на дом</h2>
+        <p class="delivery__desc">
+          Хочется полакомиться любимым десертом, но нет времени съездить в
+          магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
+          ваш заказ в течение часа!
+        </p>
+        <div class="delivery__form">
+          <p class="delivery__form__desc">
+            Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы
+            подтвердить заказ.
+          </p>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <p class="delivery__form__data">
+              <label for="delivery__data">Дата</label>
+              <input
+                id="delivery__data"
+                type="text"
+                name="delivery__data"
+                placeholder="01.04.2020"
+              />
+            </p>
+            <p class="delivery__form__tel">
+              <label for="delivery__tel">Телефон</label>
+              <input
+                id="delivery__tel"
+                type="tel"
+                name="delivery__tel"
+                placeholder="+7 800 999-00-00"
+              />
+            </p>
+            <p class="delivery__form__address">
+              <label for="delivery__address">Адрес</label>
+              <input
+                id="delivery__address"
+                type="text"
+                name="delivery__address"
+                placeholder="ул. Большая Конюшенная, 19/8"
+              />
+            </p>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
