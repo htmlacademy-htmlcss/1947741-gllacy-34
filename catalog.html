@@ -67,6 +67,122 @@
         </ul>
         <h1 class="inner__header__title">Сливочное мороженое</h1>
       </header>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <form
+          class="catalog__filters"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
+          <fieldset class="catalog__filter__group">
+            <legend class="catalog__filter__title">Сортировка:</legend>
+            <select class="select__control" name="sorting">
+              <option value="popular">по популярности</option>
+              <option value="cheap">возрастание цены</option>
+              <option value="expensive">убывание цены</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="catalog__filter__group">
+            <legend class="catalog__filter__title">Жирность:</legend>
+            <ul class="catalog__filter__list">
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input
+                    class="control__input"
+                    type="radio"
+                    name="fat__content"
+                    value="0%"
+                  />
+                  0%
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input
+                    class="control__input"
+                    type="radio"
+                    name="fat__content"
+                    value="to__10%"
+                    checked
+                  />
+                  до 10%
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input
+                    class="control__input"
+                    type="radio"
+                    name="fat__content"
+                    value="to__30%"
+                  />
+                  до 30%
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input
+                    class="control__input"
+                    type="radio"
+                    name="fat__content"
+                    value="above__30%"
+                  />
+                  выше 30%
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog__filter__group">
+            <legend class="catalog__filter__title">Наполнители:</legend>
+            <ul class="catalog__filter__list">
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input
+                    class="control__input"
+                    type="checkbox"
+                    name="filler"
+                    checked
+                  />
+                  шоколадные
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input
+                    class="control__input"
+                    type="checkbox"
+                    name="filler"
+                    checked
+                  />
+                  сахарные посыпки
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="filler" />
+                  фрукты
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="filler" />
+                  сиропы
+                </label>
+              </li>
+              <li class="catalog__filter__item">
+                <label class="control">
+                  <input class="control__input" type="checkbox" name="filler" />
+                  джемы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn" type="submit">Применить</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page__footer">
