@@ -40,7 +40,7 @@
     </header>
 
     <main class="page__inner">
-      <section class="inner__header">
+      <section class="page__inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="index.html">Главная</a>
@@ -49,7 +49,7 @@
             <span class="breadcrumbs__link breadcrumbs__link--current">Каталог</span>
           </li>
         </ul>
-        <h1 class="inner__header-title">Сливочное мороженое</h1>
+        <h1 class="page__inner-title">Сливочное мороженое</h1>
       </section>
 
       <section class="catalog">
@@ -57,7 +57,7 @@
         <form class="catalog__filters" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog__filter-group">
             <legend class="catalog__filter-title">Сортировка:</legend>
-            <select class="select__control" name="sorting">
+            <select class="catalog__filter-select" name="sorting">
               <option value="popular">по популярности</option>
               <option value="cheap">возрастание цены</option>
               <option value="expensive">убывание цены</option>
@@ -134,108 +134,108 @@
 
         <div class="catalog__product">
           <ul class="catalog__product-list">
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Малинка.">
                 <h3 class="product__card-title">Малинка</h3>
               </a>
               <p class="product__card-desc">Сливочное мороженое с малиновым джемом</p>
               <b class="product__card-price">310 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Фисташка.">
                 <h3 class="product__card-title">Фисташка</h3>
               </a>
               <p class="product__card-desc">Фисташковый пломбир с кусочками шоколада</p>
               <b class="product__card-price">340 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Черника.">
                 <h3 class="product__card-title">Черника</h3>
               </a>
               <p class="product__card-desc">Крем-брюле с черничным джемом</p>
               <b class="product__card-price">330 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Бабл-гам.">
                 <h3 class="product__card-title">Бабл-гам</h3>
               </a>
               <p class="product__card-desc">Ванильный пломбир со сладкой посыпкой</p>
               <b class="product__card-price">320 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Ежевика.">
                 <h3 class="product__card-title">Ежевика</h3>
               </a>
               <p class="product__card-desc">Сливочное мороженое с ежевичным джемом</p>
               <b class="product__card-price">330 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Банан.">
                 <h3 class="product__card-title">Банан</h3>
               </a>
               <p class="product__card-desc">Сливочный пломбир с банановым вкусом</p>
               <b class="product__card-price">340 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Шоколадка.">
                 <h3 class="product__card-title">Шоколадка</h3>
               </a>
               <p class="product__card-desc">Классический шоколадный пломбир</p>
               <b class="product__card-price">270 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Клубничка.">
                 <h3 class="product__card-title">Клубничка</h3>
               </a>
               <p class="product__card-desc">Сливочный пломбир с клубничным вкусом</p>
               <b class="product__card-price">300 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Лимон.">
                 <h3 class="product__card-title">Лимон</h3>
               </a>
               <p class="product__card-desc">Освежающий лимонный сорбет</p>
               <b class="product__card-price">310 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Ментол.">
                 <h3 class="product__card-title">Ментол</h3>
               </a>
               <p class="product__card-desc">Сливочный пломбир с ментоловым сиропом</p>
               <b class="product__card-price">320 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Орешек.">
                 <h3 class="product__card-title">Орешек</h3>
               </a>
               <p class="product__card-desc">Фисташковый пломбир с шоколадным сиропом</p>
               <b class="product__card-price">360 ₽/кг</b>
               <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
             </li>
-            <li class="catalog__product-card">
+            <li class="catalog__product-card product">
               <a class="product__card-link" href="#">
-                <img class="product__card-img" src="#" alt="">
+                <img class="product__card-img" src="#" alt="Шарик мороженого Крем-брюле.">
                 <h3 class="product__card-title">Крем-брюле</h3>
               </a>
               <p class="product__card-desc">Классическое крем-брюле</p>
@@ -245,7 +245,7 @@
           </ul>
         </div>
 
-        <div class="catalog__pagination">
+        <div class="catalog__pagination pagination">
           <button class="pagination__show-more btn" type="button">Показать еще</button>
           <ul class="pagination__list">
             <li class="pagination__item">
@@ -275,9 +275,9 @@
     </main>
 
     <footer class="page__footer">
-      <section class="footer__social">
+      <section class="page__footer-social social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer__social-list social__list">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram.</span></a>
           </li>
@@ -290,30 +290,30 @@
         </ul>
       </section>
 
-      <section class="footer__more">
+      <section class="page__footer-more more">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-        <ul class="footer__more-list">
-          <li class="footer__more-item">
-            <a class="footer__more-link" href="#">Для поставщиков</a>
+        <ul class="more__list">
+          <li class="more__item">
+            <a class="more__link" href="#">Для поставщиков</a>
           </li>
-          <li class="footer__more-item">
-            <a class="footer__more-link" href="#">О производстве</a>
+          <li class="more__item">
+            <a class="more__link" href="#">О производстве</a>
           </li>
-          <li class="footer__more-item">
-            <a class="footer__more-link" href="#">Наши документы</a>
+          <li class="more__item">
+            <a class="more__link" href="#">Наши документы</a>
           </li>
-          <li class="footer__more-item">
-            <a class="footer__more-link" href="#">Экологические стандарты</a>
+          <li class="more__item">
+            <a class="more__link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
 
-      <section class="footer__author">
+      <section class="page__footer-author author">
         <h2 class="visually-hidden">Автор сайта</h2>
-        <a class="footer__author-logo" href="https://htmlacademy.ru/">
-          <img class="footer__author-img" src="#" alt="Логотип HTML Academy.">
+        <a class="author__logo" href="https://htmlacademy.ru/">
+          <img class="author__img" src="#" alt="Логотип HTML Academy.">
         </a>
-        <p class="footer__author-text">Сделано в <a class="footer__author-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+        <p class="author__text">Сделано в <a class="author__link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
       </section>
     </footer>
   </body>
