@@ -27,7 +27,7 @@
       </ul>
       <ul class="navigation__list navigation__list--user">
         <li class="navigation__item">
-          <a class="navigation__link--tel" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="navigation__link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#"><span class="visually-hidden">Поиск.</span></a>
@@ -198,46 +198,52 @@
       </ul>
     </section>
 
-    <section class="benefits">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="benefits__desc">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
-        производства на развес</p>
-      <ul class="benefits__list">
-        <li class="benefits__item benefits__item--ice">
-          <p class="benefits__item-desc">Всё наше мороженое изготавливается на собственном производстве с использованием
-            современного оборудования и проверенных временем технологий.</p>
-        </li>
-        <li class="benefits__item benefits__item--leaf">
-          <p class="benefits__item-desc">Для приготовления мороженого используются сливки и молоко высочайшего качества.
-            Все ингредиенты и добавки произведены из натурального сырья.</p>
-        </li>
-        <li class="benefits__item benefits__item--cow">
-          <p class="benefits__item-desc">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
-            которыми нас связывает долговременное сотрудничество.</p>
-        </li>
-        <li class="benefits__item benefits__item--thermometer">
-          <p class="benefits__item-desc">Доставка нашего мороженого осуществляется в специальном термопаке, который не
-            даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
-        </li>
-      </ul>
-    </section>
+    <div class="wrapper__benefits">
+      <section class="benefits">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="benefits__desc">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
+          производства на развес</p>
+        <ul class="benefits__list">
+          <li class="benefits__item benefits__item--ice">
+            <p class="benefits__item-desc">Всё наше мороженое изготавливается на собственном производстве с
+              использованием
+              современного оборудования и проверенных временем технологий.</p>
+          </li>
+          <li class="benefits__item benefits__item--leaf">
+            <p class="benefits__item-desc">Для приготовления мороженого используются сливки и молоко высочайшего
+              качества.
+              Все ингредиенты и добавки произведены из натурального сырья.</p>
+          </li>
+          <li class="benefits__item benefits__item--cow">
+            <p class="benefits__item-desc">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
+              которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li class="benefits__item benefits__item--thermometer">
+            <p class="benefits__item-desc">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+              даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <article class="preview">
       <h2 class="preview__title">Новое в нашем блоге</h2>
       <h3 class="preview__subtitle">10 способов сервировки фруктовых щербетов к столу</h3>
     </article>
 
-    <section class="newsletter">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <p class="newsletter__desc">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
-        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="newsletter__email">Email</label>
-        <input class="newsletter__email" type="email" placeholder="email@example.com" name="newsletter-email"
-          id="newsletter__email" required>
-        <button class="newsletter__btn btn" type="submit">Отправить</button>
-      </form>
-    </section>
+    <div class="wrapper__newsletter">
+      <section class="newsletter">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="newsletter__desc">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного,
+          что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter__email">Email</label>
+          <input class="newsletter__email" type="email" placeholder="email@example.com" name="newsletter-email"
+            id="newsletter__email" required>
+          <button class="newsletter__btn btn" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
 
     <section class="delivery">
       <h2 class="delivery__title">Доставка любимого мороженого на дом</h2>
@@ -264,17 +270,19 @@
       </div>
     </section>
 
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <address class="contacts__address">
-        <p class="contacts__address-subtitle">Адрес главного офиса и офлайн-магазина:</p>
-        <p class="contacts__addres-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <p class="contacts__phone-subtitle">Для заказов по телефону:</p>
-        <a class="contacts__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <p class="contacts__phone-schedule">(с 10 до 20 ежедневно)</p>
-      </address>
-      <a class="contacts__feedback-btn btn" href="#">Форма обратной связи</a>
-    </section>
+    <div class="wrapper__contacts">
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <address class="contacts__address">
+          <p class="contacts__address-subtitle">Адрес главного офиса и офлайн-магазина:</p>
+          <p class="contacts__addres-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p class="contacts__phone-subtitle">Для заказов по телефону:</p>
+          <a class="contacts__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <p class="contacts__phone-schedule">(с 10 до 20 ежедневно)</p>
+        </address>
+        <a class="contacts__feedback-btn btn" href="#">Форма обратной связи</a>
+      </section>
+    </div>
   </main>
 
   <footer class="page__footer">
@@ -298,7 +306,7 @@
       <h2 class="visually-hidden">Дополнительная информация</h2>
       <ul class="more__list">
         <li class="more__item">
-          <a class="more__link" href="#">Для поставщиков</a>
+          <a class="more__link more__link--heart" href="#">Для поставщиков</a>
         </li>
         <li class="more__item">
           <a class="more__link" href="#">О производстве</a>
