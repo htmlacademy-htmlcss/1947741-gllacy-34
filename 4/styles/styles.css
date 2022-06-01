@@ -23,7 +23,7 @@
 }
 
 body{
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -32,6 +32,7 @@ body{
 }
 
 .btn{
+  font-family: inherit;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
@@ -50,17 +51,21 @@ body{
   background-color: #FF4A78;
 }
 
-.navigation__link-tel{
-  font-weight: 700;
-  line-height: 20px;
-  color: #2D3440;
-  text-decoration: none;
-}
-
-.navigation__list--user .navigation__item:not(:first-child){
+.navigation__list--user .navigation__item{
   font-size: 14px;
   line-height: 20px;
   background-color: rgba(252, 252, 252, 0.3);
+}
+
+.navigation__list--user .navigation__item--tel{
+  font-weight: 700;
+  line-height: 20px;
+  background-color: #FEAFC3;
+}
+
+.navigation__link-tel{
+  color: #2D3440;
+  text-decoration: none;
 }
 
 .slider__item-title{
@@ -91,14 +96,14 @@ body{
   height: 268px;
 }
 
-.gift__item:nth-of-type(1){
+.gift__item--raspberry{
   background-image: url("../images/raspberry.png");
   background-repeat: no-repeat;
   background-color: #FF7799;
   background-size: 219px 268px;
 }
 
-.gift__item:nth-of-type(2){
+.gift__item--marshmallow{
   background-image: url("../images/marshmallow.png");
   background-repeat: no-repeat;
   background-color: #FF7799;
@@ -187,6 +192,13 @@ body{
   background-color: #FCFCFC;
 }
 
+.preview__title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
 .preview__subtitle{
   font-weight: 700;
   font-size: 24px;
@@ -208,6 +220,12 @@ body{
 
 .newsletter__desc{
   color: #565C66;
+}
+
+.newsletter__email{
+  font-family: inherit;
+  line-height: 20px;
+  color: #B9B9B9;
 }
 
 .newsletter__btn{
@@ -247,6 +265,12 @@ body{
 .delivery__form label{
   font-weight: 700;
   line-height: 20px;
+}
+
+.delivery__form input{
+  font-family: inherit;
+  line-height: 20px;
+  color: #B9B9B9;
 }
 
 .delivery__btn{
