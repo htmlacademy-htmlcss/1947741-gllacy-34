@@ -47,6 +47,28 @@ body{
   text-decoration: none;
 }
 
+.navigation{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation__logo{
+  width: 137px;
+  margin-right: 16px;
+}
+
+.navigation__list{
+  min-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list--user{
+  min-width: 431px;
+  margin-left: auto;
+}
+
 .navigation__link{
   line-height: 20px;
   text-align: center;
@@ -84,20 +106,42 @@ body{
   flex-grow: 1;
 }
 
+.page__container{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider__item{
+  display: flex;
+}
+
 .slider__item-title{
+  width: 470px;
+  margin: 0;
+  margin-left: 70px;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
 }
 
 .slider__item-desc{
+  width: 414px;
+  margin: 0;
+  margin-left: 70px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .slider__item-btn{
+  margin-left: 70px;
   color: #2D3440;
   background-color: #FCFCFC;
+}
+
+.slider__item-img{
+  display: block;
+  width: 306px;
+  height: 507px;
 }
 
 .gifts__desc{
@@ -105,6 +149,13 @@ body{
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+}
+
+.gifts__list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .gift__item{
@@ -115,6 +166,7 @@ body{
 .gift__item--raspberry{
   background-image: url("../images/raspberry.png");
   background-repeat: no-repeat;
+  background-position: right bottom;
   background-color: #FF7799;
   background-size: 219px 268px;
 }
@@ -122,34 +174,58 @@ body{
 .gift__item--marshmallow{
   background-image: url("../images/marshmallow.png");
   background-repeat: no-repeat;
+  background-position: right bottom;
   background-color: #FF7799;
   background-size: 219px 268px;
 }
 
 .gift__item-title{
+  width: 254px;
+  margin-left: 36px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
+.gift__item-desc{
+  width: 328px;
+  margin-left: 36px;
+}
+
 .gift__item-btn{
+  margin-left: 36px;
   color: #2D3440;
   background-color: #FCFCFC;
 }
 
 .popular__desc{
+  width: 527px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
 }
 
+.popular__product-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .product__card{
+  width: 270px;
   background-color: #FCFCFC;
 }
 
 .product__card-link{
   text-decoration: none;
+}
+
+.product__card-img{
+  display: block;
+  margin: 0 auto;
 }
 
 .product__card-title{
@@ -186,10 +262,13 @@ body{
 .benefits{
   width: 1122px;
   height: 432px;
+  margin: 0 auto;
   background-color: #FFFFFF;
 }
 
 .benefits__desc{
+  width: 995px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -200,15 +279,23 @@ body{
   color: #565C66;
 }
 
+.container__preview-newsletter{
+  display: flex;
+  justify-content: space-between;
+}
+
 .preview{
   width: 570px;
   height: 224px;
   background-image: url("../images/serving_method.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+
 }
 
 .preview__title{
+  width: 170px;
+  margin-left: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -216,6 +303,8 @@ body{
 }
 
 .preview__subtitle{
+  width: 303px;
+  margin-left: 32px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -230,11 +319,12 @@ body{
 
 .newsletter{
   width: 558px;
-  height: 212px;
+  margin: 0 auto;
   background-color: #FFFFFF;
 }
 
 .newsletter__desc{
+  width: 506px;
   color: #565C66;
 }
 
@@ -250,6 +340,7 @@ body{
 }
 
 .delivery{
+  display: flex;
   width: 1170px;
   height: 534px;
   background-image: url("../images/ice_cream-delivery.jpg");
@@ -257,19 +348,26 @@ body{
   background-color: #FCFCFC;
 }
 
-.delivery__title{
+.delivery__text{
+  margin-left: 100px;
+}
+
+.delivery__text-title{
+  width: 356px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 }
 
-.delivery__desc{
+.delivery__text-desc{
+  width: 371px;
   color: #565C66;
 }
 
 .delivery__form{
   width: 500px;
   height: 406px;
+  margin-left: 135px;
   color: #2D3440;
   background-color: #FCFCFC;
 }
@@ -306,6 +404,7 @@ body{
 .contacts{
   width: 343px;
   height: 364px;
+  margin-left: 64px;
   background-color: #FCFCFC;
 }
 
@@ -314,7 +413,12 @@ body{
   color: #565C66;
 }
 
+.contacts__address-subtitle{
+  width: 179px;
+}
+
 .contacts__addres-text{
+  width: 263px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -339,6 +443,21 @@ body{
   background-color: #FF2F64;
 }
 
+.page__footer{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page__footer-social{
+  width: 104px;
+  margin-right: 299px;
+}
+
+.page__footer-more{
+  width: 356px;
+}
+
 .more__link{
   font-size: 14px;
   line-height: 20px;
@@ -350,6 +469,11 @@ body{
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+}
+
+.page__footer-author{
+  width: 193px;
+  margin-left: auto;
 }
 
 .author__text{
