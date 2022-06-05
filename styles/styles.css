@@ -259,6 +259,11 @@ body {
   background-color: #FFFFFF;
 }
 
+.benefits__list{
+  margin: 0;
+  padding: 0;
+}
+
 .benefits__desc {
   width: 995px;
   margin: 0 auto;
@@ -269,6 +274,8 @@ body {
 }
 
 .benefits__item-desc {
+  margin: 0;
+  padding: 0;
   color: #565C66;
 }
 
@@ -310,17 +317,26 @@ body {
 }
 
 .newsletter {
-  width: 558px;
+  width: 506px;
   margin: 0 auto;
+  padding: 26px;
   background-color: #FFFFFF;
 }
 
 .newsletter__desc {
   width: 506px;
+  margin: 0;
+  padding: 0;
   color: #565C66;
 }
 
+.newsletter__form {
+  min-width: 506px;
+}
+
 .newsletter__email {
+  width: 332px;
+  margin-right: 14px;
   font-family: inherit;
   line-height: 20px;
   color: #B9B9B9;
