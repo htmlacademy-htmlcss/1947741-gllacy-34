@@ -440,7 +440,6 @@ body {
 
 .wrapper__newsletter {
   width: 570px;
-  height: 224px;
   padding: 6px;
   background-image: url("../images/red-blue_stripes.png");
   background-repeat: no-repeat;
@@ -482,38 +481,45 @@ body {
 
 .delivery {
   display: flex;
-  width: 1170px;
-  height: 534px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 64px 64px 64px 100px;
   background-image: url("../images/ice_cream-delivery.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  border-radius: 16px;
 }
 
 .delivery__text {
-  margin-left: 100px;
+  width: 371px;
+  padding: 103px 0 99px 0;
 }
 
 .delivery__text-title {
-  width: 356px;
+  margin: 0;
+  margin-bottom: 24px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
 }
 
 .delivery__text-desc {
-  width: 371px;
+  margin: 0;
+  padding: 0;
   color: #565C66;
 }
 
 .delivery__form {
-  width: 500px;
-  height: 406px;
-  margin-left: 135px;
+  width: 420px;
+  padding: 40px 40px 42px 40px;
   color: #2D3440;
   background-color: #FCFCFC;
 }
 
 .delivery__form-desc {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
   color: #565C66;
 }
 
