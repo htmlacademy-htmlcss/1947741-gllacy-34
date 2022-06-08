@@ -151,14 +151,25 @@ body {
   flex-grow: 1;
 }
 
+.slider {
+  margin-bottom: 80px;
+}
+
 .slider__item {
   display: flex;
+  padding-top: 21px;
+}
+
+.slider__item-text {
+  padding-top: 136px;
+  padding-bottom: 138px;
+  padding-left: 70px;
 }
 
 .slider__item-title {
   width: 470px;
   margin: 0;
-  margin-left: 70px;
+  margin-bottom: 24px;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
@@ -167,13 +178,12 @@ body {
 .slider__item-desc {
   width: 414px;
   margin: 0;
-  margin-left: 70px;
+  margin-bottom: 48px;
   font-size: 18px;
   line-height: 24px;
 }
 
 .slider__item-btn {
-  margin-left: 70px;
   color: #2D3440;
   background-color: #FCFCFC;
 }
@@ -184,7 +194,51 @@ body {
   height: 507px;
 }
 
+.slider__control {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container__pagination-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__social-item {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.slider__social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gifts {
+  margin-bottom: 80px;
+}
+
 .gifts__desc {
+  width: 434px;
+  margin: 0 auto 55px;
+  padding: 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -197,12 +251,14 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .gift__item {
   width: 534px;
-  min-height: 268px;
-  padding-left: 36px;
+  min-height: 196px;
+  padding: 36px 0 36px 36px;
+  border-radius: 16px;
 }
 
 .gift__item--raspberry {
@@ -223,6 +279,8 @@ body {
 
 .gift__item-title {
   width: 254px;
+  margin: 0;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -230,6 +288,9 @@ body {
 
 .gift__item-desc {
   width: 328px;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
 }
 
 .gift__item-btn {
@@ -237,9 +298,13 @@ body {
   background-color: #FCFCFC;
 }
 
+.popular {
+  margin-bottom: 80px;
+}
+
 .popular__desc {
   width: 527px;
-  margin: 0 auto;
+  margin: 0 auto 56px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -251,12 +316,15 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .product__card {
   width: 270px;
   margin-right: 30px;
+  padding: 0 40px 24px;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .product__card:nth-child(4n) {
@@ -269,10 +337,13 @@ body {
 
 .product__card-img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 16px;
 }
 
 .product__card-title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -281,6 +352,9 @@ body {
 }
 
 .product__card-desc {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
   text-align: center;
   color: #565C66;
 }
@@ -299,29 +373,32 @@ body {
 .wrapper__benefits {
   width: 1170px;
   height: 480px;
+  padding: 24px;
   background-image: url("../images/waffle.png");
   background-repeat: no-repeat;
 }
 
 .benefits {
-  width: 1122px;
-  height: 432px;
-  margin: 0 auto;
+  width: 1042px;
+  padding: 56px 40px;
+  border-radius: 16px;
   background-color: #FFFFFF;
-}
-
-.benefits__list{
-  margin: 0;
-  padding: 0;
 }
 
 .benefits__desc {
   width: 995px;
-  margin: 0 auto;
+  margin: 0 auto 56px;
+  padding: 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .benefits__item-desc {
