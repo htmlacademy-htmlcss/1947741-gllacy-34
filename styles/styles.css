@@ -410,19 +410,20 @@ body {
 .container__preview-newsletter {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .preview {
-  width: 570px;
-  height: 224px;
+  padding: 32px 235px 67px 32px;
   background-image: url("../images/serving_method.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  border-radius: 16px;
 }
 
 .preview__title {
-  width: 170px;
-  margin-left: 32px;
+  margin: 0;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -431,7 +432,7 @@ body {
 
 .preview__subtitle {
   width: 303px;
-  margin-left: 32px;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -440,31 +441,35 @@ body {
 .wrapper__newsletter {
   width: 570px;
   height: 224px;
+  padding: 6px;
   background-image: url("../images/red-blue_stripes.png");
   background-repeat: no-repeat;
 }
 
 .newsletter {
   width: 506px;
-  margin: 0 auto;
+  margin: 0;
   padding: 26px;
   background-color: #FFFFFF;
+  border-radius: 16px;
 }
 
 .newsletter__desc {
-  width: 506px;
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
   color: #565C66;
 }
 
 .newsletter__form {
-  min-width: 506px;
+  width: 506px;
 }
 
 .newsletter__email {
   width: 332px;
+  height: 48px;
   margin-right: 14px;
+  padding: 0;
   font-family: inherit;
   line-height: 20px;
   color: #B9B9B9;
