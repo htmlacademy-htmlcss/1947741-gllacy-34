@@ -52,6 +52,7 @@ body {
 }
 
 .btn {
+  padding: 12px 32px;
   font-family: inherit;
   font-weight: 700;
   line-height: 20px;
@@ -158,6 +159,10 @@ body {
 .slider__item {
   display: flex;
   padding-top: 21px;
+}
+
+.slider__item--hidden {
+  display: none;
 }
 
 .slider__item-text {
@@ -514,6 +519,7 @@ body {
   padding: 40px 40px 42px 40px;
   color: #2D3440;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .delivery__form-desc {
@@ -540,19 +546,18 @@ body {
 }
 
 .wrapper__contacts {
-  width: 1170px;
-  height: 492px;
+  padding: 64px 763px 64px 64px;
   color: #2D3440;
   background-image: url("../images/ice_cream-feedback.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  border-radius: 16px;
 }
 
 .contacts {
-  width: 343px;
-  height: 364px;
-  margin-left: 64px;
+  padding: 40px;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .contacts__address {
@@ -561,15 +566,25 @@ body {
 }
 
 .contacts__address-subtitle {
-  width: 179px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
 }
 
 .contacts__addres-text {
-  width: 263px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
+}
+
+.contacts__phone-subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
 }
 
 .contacts__phone {
@@ -581,12 +596,18 @@ body {
 }
 
 .contacts__phone-schedule {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
 }
 
 .contacts__feedback-btn {
+  display: block;
   color: #FCFCFC;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  border-radius: 26px;
   background-color: #FF2F64;
 }
 
@@ -594,6 +615,7 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
+  padding: 48px 14px 48px 4px;
 }
 
 .page__footer-social {
@@ -601,8 +623,32 @@ body {
   margin-right: 299px;
 }
 
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.social__item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .page__footer-more {
   width: 356px;
+}
+
+.more__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .more__link {
@@ -619,7 +665,6 @@ body {
 }
 
 .page__footer-author {
-  width: 193px;
   margin-left: auto;
 }
 
