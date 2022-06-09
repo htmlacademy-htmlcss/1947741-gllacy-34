@@ -680,13 +680,30 @@ body {
 
 /*catalog*/
 
+.page__header-inner {
+  margin-bottom: 32px;
+}
+
 .page__inner--container {
   width: 1170px;
   margin: 0 auto;
   flex-grow: 1;
 }
 
+.page__inner-header {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs__link {
+  margin-right: 28px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -695,6 +712,7 @@ body {
 }
 
 .page__inner-title {
+  margin: 0;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
