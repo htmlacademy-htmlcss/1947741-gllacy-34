@@ -22,6 +22,12 @@
   font-display: swap;
 }
 
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
 html {
   height: 100%;
 }
@@ -128,21 +134,21 @@ body {
   background-color: #FEAFC3;
 }
 
-.navigation__link-tel {
+.navigation__link--tel {
   padding: 6px 0;
   color: #2D3440;
   text-decoration: none;
 }
 
-.navigation__link-search{
+.navigation__link--search{
   padding: 8px;
 }
 
-.navigation__link-enter{
+.navigation__link--enter{
   padding: 6px 16px 6px 38px;
 }
 
-.navigation__link-cart{
+.navigation__link--cart{
   padding: 6px 16px 6px 38px;
 }
 
