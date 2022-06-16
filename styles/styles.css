@@ -328,10 +328,11 @@ body {
 }
 
 .product__card {
+  display: flex;
+  flex-direction: column;
   width: 25%;
   min-height: 332px;
   margin-right: 30px;
-  padding: 0 40px 24px;
   background-color: #FCFCFC;
   border-radius: 8px;
 }
@@ -347,6 +348,13 @@ body {
 .product__card-img {
   display: block;
   margin: 0 auto 16px;
+}
+
+.product__card-content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 40px 24px;
 }
 
 .product__card-title {
@@ -368,15 +376,25 @@ body {
   color: #565C66;
 }
 
+.product__card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
 .product__card-price {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: left;
+  align-self: center;
 }
 
 .product__card-btn {
+  width: 32px;
+  height: 32px;
   background-color: #FF2F64;
+  border-radius: 50%;
 }
 
 .wrapper__benefits {
@@ -543,7 +561,7 @@ body {
   color: #565C66;
 }
 
-.delivery__form {
+.delivery__container {
   max-width: 500px;
   padding: 40px 40px 42px 40px;
   color: #2D3440;
@@ -551,25 +569,49 @@ body {
   border-radius: 8px;
 }
 
-.delivery__form-desc {
+.delivery__desc {
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
   color: #565C66;
 }
 
-.delivery__form label {
+.delivery__form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  column-gap: 16px;
+  row-gap: 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.delivery__form-address {
+  grid-column: 1/-1;
+}
+
+.delivery__form-label {
   font-weight: 700;
   line-height: 20px;
 }
 
-.delivery__form input {
+.delivery__form--info {
+  display: none;
+}
+
+.field-group input {
   font-family: inherit;
   line-height: 20px;
   color: #B9B9B9;
 }
 
 .delivery__btn {
+  grid-column: 1/-1;
+  justify-self: center;
+  margin-top: 12px;
   color: #FCFCFC;
   background-color: #FF2F64;
 }
@@ -671,10 +713,14 @@ body {
 }
 
 .page__footer-more {
-  max-width: 356px;
+  width: 356px;
 }
 
 .more__list{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 24px;
+  row-gap: 8px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -686,6 +732,7 @@ body {
 }
 
 .more__link {
+  display: block;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;

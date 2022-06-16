@@ -165,41 +165,65 @@
             <a class="product__card-link" href="#">
               <img class="product__card-img" src="images/product_cards/ice_cream_scoop-raspberry.jpg" width="168"
                 height="168" alt="Шарик мороженого Малинка.">
-              <h3 class="product__card-title">Малинка</h3>
             </a>
-            <p class="product__card-desc">Сливочное мороженое с&nbsp;малиновым джемом</p>
-            <b class="product__card-price">310 ₽/кг</b>
-            <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+            <div class="product__card-content">
+              <a class="product__card-link" href="#">
+                <h3 class="product__card-title">Малинка</h3>
+              </a>
+              <p class="product__card-desc">Сливочное мороженое с&nbsp;малиновым джемом</p>
+              <div class="product__card-container">
+                <b class="product__card-price">310 ₽/кг</b>
+                <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+              </div>
+            </div>
           </li>
           <li class="product__card">
             <a class="product__card-link" href="#">
               <img class="product__card-img" src="images/product_cards/ice_cream_scoop-pistachio.jpg" width="168"
                 height="168" alt="Шарик мороженого Фисташка.">
-              <h3 class="product__card-title">Фисташка</h3>
             </a>
-            <p class="product__card-desc">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
-            <b class="product__card-price">340 ₽/кг</b>
-            <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+            <div class="product__card-content">
+              <a class="product__card-link" href="#">
+                <h3 class="product__card-title">Фисташка</h3>
+              </a>
+              <p class="product__card-desc">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
+              <div class="product__card-container">
+                <b class="product__card-price">340 ₽/кг</b>
+                <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+              </div>
+            </div>
           </li>
           <li class="product__card">
             <a class="product__card-link" href="#">
               <img class="product__card-img" src="images/product_cards/ice_cream_scoop-blueberry.jpg" width="168"
                 height="168" alt="Шарик мороженого Черника.">
-              <h3 class="product__card-title">Черника</h3>
             </a>
-            <p class="product__card-desc">Крем-брюле с&nbsp;черничным джемом</p>
-            <b class="product__card-price">330 ₽/кг</b>
-            <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+            <div class="product__card-content">
+              <a class="product__card-link" href="#">
+                <h3 class="product__card-title">Черника</h3>
+              </a>
+              <p class="product__card-desc">Крем-брюле с&nbsp;черничным джемом</p>
+              <div class="product__card-container">
+                <b class="product__card-price">330 ₽/кг</b>
+                <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+              </div>
+            </div>
           </li>
           <li class="product__card">
             <a class="product__card-link" href="#">
               <img class="product__card-img" src="images/product_cards/ice_cream_scoop-bubble_gum.jpg" width="168"
                 height="168" alt="Шарик мороженого Бабл-гам.">
-              <h3 class="product__card-title">Бабл-гам</h3>
             </a>
-            <p class="product__card-desc">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
-            <b class="product__card-price">320 ₽/кг</b>
-            <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+            <div class="product__card-content">
+              <a class="product__card-link" href="#">
+                <h3 class="product__card-title">Бабл-гам</h3>
+              </a>
+              <p class="product__card-desc">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
+              <div class="product__card-container">
+                <b class="product__card-price">320 ₽/кг</b>
+                <a class="product__card-btn" href="#"><span class="visually-hidden">Корзина.</span></a>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -267,21 +291,27 @@
             в&nbsp;магазин? Закажите доставку мороженого на&nbsp;дом, и&nbsp;курьер привезёт вам ваш заказ
             в&nbsp;течение часа!</p>
         </div>
-        <div class="delivery__form">
-          <p class="delivery__form-desc">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы
+        <div class="delivery__container">
+          <p class="delivery__desc">Укажите адрес и&nbsp;дату доставки, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы
             подтвердить заказ.
           </p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="delivery__form-data">
-              <label for="delivery__data">Дата</label>
+          <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group delivery__form-data">
+              <label class="delivery__form-label" for="delivery__data">Дата
+                <button class="delivery__form--info"><span class="visually-hidden">Посмотреть дополнительную
+                    информацию</span></button>
+              </label>
               <input id="delivery__data" type="text" name="delivery__data" placeholder="01.04.2020" required>
             </p>
-            <p class="delivery__form-tel">
-              <label for="delivery__tel">Телефон</label>
+            <p class="field-group delivery__form-tel">
+              <label class="delivery__form-label" for="delivery__tel">Телефон</label>
               <input id="delivery__tel" type="tel" name="delivery__tel" placeholder="+7 800 999-00-00">
             </p>
-            <p class="delivery__form-address">
-              <label for="delivery__address">Адрес</label>
+            <p class="field-group delivery__form-address">
+              <label class="delivery__form-label" for="delivery__address">Адрес
+                <button class="delivery__form--info"><span class="visually-hidden">Посмотреть дополнительную
+                    информацию</span></button>
+              </label>
               <input id="delivery__address" type="text" name="delivery__address"
                 placeholder="ул. Большая Конюшенная, 19/8" required>
             </p>

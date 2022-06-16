@@ -16,7 +16,7 @@
   "css.lint.idSelector": "error",
   "css.lint.important": "error",
   "css.lint.importStatement": "warning",
-  "css.lint.universalSelector": "warning",
+  "css.lint.universalSelector": "ignore",
   "css.lint.unknownVendorSpecificProperties": "warning",
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
