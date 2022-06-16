@@ -852,14 +852,18 @@ body {
 }
 
 .catalog__product-list{
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .catalog__product-card {
-  width: 270px;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .catalog__pagination {
