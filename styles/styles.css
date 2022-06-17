@@ -274,18 +274,18 @@ body {
 }
 
 .gift__item--raspberry {
+  background-color: #FF7799;
   background-image: url("../images/raspberry.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-color: #FF7799;
   background-size: 219px 268px;
 }
 
 .gift__item--marshmallow {
+  background-color: #FF7799;
   background-image: url("../images/marshmallow.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-color: #FF7799;
   background-size: 219px 268px;
 }
 
@@ -473,9 +473,9 @@ body {
 .preview {
   margin-right: 30px;
   padding: 33px 235px 68px 32px;
+  background-color: #FCFCFC;
   background-image: url("../images/serving_method.jpg");
   background-repeat: no-repeat;
-  background-color: #FCFCFC;
   background-size: cover;
   border-radius: 16px;
 }
@@ -540,9 +540,9 @@ body {
   justify-content: space-between;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
+  background-color: #FCFCFC;
   background-image: url("../images/ice_cream-delivery.jpg");
   background-repeat: no-repeat;
-  background-color: #FCFCFC;
   background-size: cover;
   border-radius: 16px;
 }
@@ -624,9 +624,9 @@ body {
 .wrapper__contacts {
   padding: 64px 763px 64px 64px;
   color: #2D3440;
+  background-color: #FCFCFC;
   background-image: url("../images/ice_cream-feedback.jpg");
   background-repeat: no-repeat;
-  background-color: #FCFCFC;
   background-size: cover;
   border-radius: 16px;
 }
