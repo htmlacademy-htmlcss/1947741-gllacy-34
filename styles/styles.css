@@ -35,15 +35,19 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  width: 1170px;
   height: 100%;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Inter", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #2D3440;
   background-color: #FEAFC3;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -59,9 +63,9 @@ body {
 
 .btn {
   padding: 12px 32px;
+  line-height: 20px;
   font-family: inherit;
   font-weight: 700;
-  line-height: 20px;
   text-align: center;
   text-decoration: none;
 }
@@ -125,9 +129,9 @@ body {
 }
 
 .navigation__list--user .navigation__item--tel {
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   background-color: #FEAFC3;
 }
 
@@ -137,15 +141,15 @@ body {
   text-decoration: none;
 }
 
-.navigation__link--search{
+.navigation__link--search {
   padding: 8px;
 }
 
-.navigation__link--enter{
+.navigation__link--enter {
   padding: 6px 16px 6px 38px;
 }
 
-.navigation__link--cart{
+.navigation__link--cart {
   padding: 6px 16px 6px 38px;
 }
 
@@ -174,9 +178,9 @@ body {
   max-width: 470px;
   margin: 0;
   margin-bottom: 24px;
-  font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .slider__item-desc {
@@ -243,9 +247,9 @@ body {
   max-width: 434px;
   margin: 0 auto 55px;
   padding: 0;
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -289,9 +293,9 @@ body {
   max-width: 254px;
   margin: 0;
   margin-bottom: 28px;
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
 }
 
 .gift__item-desc {
@@ -313,9 +317,9 @@ body {
 .popular__desc {
   max-width: 527px;
   margin: 0 auto 56px;
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -348,9 +352,10 @@ body {
 .product__card-img {
   display: block;
   margin: 0 auto 16px;
+  object-fit: cover;
 }
 
-.product__card-content{
+.product__card-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -361,9 +366,9 @@ body {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   text-align: center;
   color: #2D3440;
 }
@@ -383,9 +388,9 @@ body {
 }
 
 .product__card-price {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   text-align: left;
   align-self: center;
 }
@@ -401,26 +406,26 @@ body {
   min-height: 480px;
   margin-bottom: 80px;
   padding: 24px;
-  border-radius: 16px;
   background-image: url("../images/waffle.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .benefits {
   width: 1122px;
   padding: 56px 40px;
-  border-radius: 16px;
   background-color: #FFFFFF;
+  border-radius: 16px;
 }
 
 .benefits__desc {
   max-width: 995px;
   margin: 0 auto 56px;
   padding: 0;
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -468,36 +473,36 @@ body {
 .preview {
   margin-right: 30px;
   padding: 33px 235px 68px 32px;
-  border-radius: 16px;
   background-image: url("../images/serving_method.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .preview__title {
   margin: 0;
   margin-bottom: 13px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: #565C66;
 }
 
 .preview__subtitle {
   min-width: 303px;
   margin: 0;
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
 }
 
 .wrapper__newsletter {
   padding: 6px;
-  border-radius: 16px;
   background-image: url("../images/red-blue_stripes.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .newsletter {
@@ -535,11 +540,11 @@ body {
   justify-content: space-between;
   margin-bottom: 80px;
   padding: 64px 64px 64px 100px;
-  border-radius: 16px;
   background-image: url("../images/ice_cream-delivery.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .delivery__text {
@@ -550,9 +555,9 @@ body {
 .delivery__text-title {
   margin: 0;
   margin-bottom: 24px;
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .delivery__text-desc {
@@ -618,18 +623,18 @@ body {
 
 .wrapper__contacts {
   padding: 64px 763px 64px 64px;
-  border-radius: 16px;
   color: #2D3440;
   background-image: url("../images/ice_cream-feedback.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
   background-size: cover;
+  border-radius: 16px;
 }
 
 .contacts {
   padding: 40px 40px 42px;
-  border-radius: 8px;
   background-color: #FCFCFC;
+  border-radius: 8px;
 }
 
 .contacts__address {
@@ -647,9 +652,9 @@ body {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   color: #2D3440;
 }
 
@@ -660,9 +665,9 @@ body {
 }
 
 .contacts__phone {
-  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   color: #2D3440;
   text-decoration: none;
 }
@@ -678,9 +683,9 @@ body {
 .contacts__feedback-btn {
   display: block;
   color: #FCFCFC;
-  outline: 4px solid rgba(255, 47, 100, 0.3);
-  border-radius: 26px;
   background-color: #FF2F64;
+  border-radius: 26px;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
 .page__footer {
@@ -716,7 +721,7 @@ body {
   width: 356px;
 }
 
-.more__list{
+.more__list {
   display: grid;
   grid-template-columns: max-content max-content;
   column-gap: 24px;
@@ -740,9 +745,9 @@ body {
 }
 
 .more__link--heart {
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
 }
 
 .page__footer-author {
@@ -773,8 +778,8 @@ body {
 /*catalog*/
 
 .page__inner--container {
-  padding-top: 32px;
   flex-grow: 1;
+  padding-top: 32px;
 }
 
 .page__inner-header {
@@ -791,18 +796,18 @@ body {
 
 .breadcrumbs__link {
   margin-right: 28px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   color: #2D3440;
   text-decoration: none;
 }
 
 .page__inner-title {
   margin: 0;
-  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  font-weight: 900;
 }
 
 .catalog__filters {
@@ -851,7 +856,7 @@ body {
   margin-bottom: 16px;
 }
 
-.catalog__product-list{
+.catalog__product-list {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   column-gap: 30px;
