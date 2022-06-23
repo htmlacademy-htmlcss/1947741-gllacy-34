@@ -62,12 +62,15 @@ body {
 }
 
 .btn {
+  display: inline-block;
   padding: 12px 32px;
   line-height: 20px;
   font-family: inherit;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .navigation {
@@ -99,6 +102,7 @@ body {
 }
 
 .navigation__link {
+  position: relative;
   display: block;
   padding: 8px 16px;
   line-height: 20px;
@@ -107,16 +111,51 @@ body {
   text-decoration: none;
 }
 
+.navigation__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #2D3440;
+}
+
+.navigation__link:not(.navigation__link--tel):hover {
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation__link:not(.navigation__link--tel):active {
+  color: #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 30px;
+}
+
+.navigation__link:not(.navigation__link--tel):focus {
+  color: #2D3440;
+  background: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2D3440;
+  border-radius: 30px;
+}
+
+.navigation__link:not(.navigation__link--tel):not(navigation__link--cart):current {
+  color: #FCFCFC;
+  background-color: #FF4A78;
+  border-radius: 30px;
+}
+
 .navigation__link--current {
   color: #FCFCFC;
   background-color: #FF4A78;
+  border-radius: 30px;
 }
 
 .navigation__list--user .navigation__item {
   margin-right: 16px;
   font-size: 14px;
   line-height: 20px;
-  background-color: rgba(252, 252, 252, 0.3);
 }
 
 .navigation__list--user .navigation__item:last-child {
@@ -142,15 +181,41 @@ body {
 }
 
 .navigation__link--search {
-  padding: 8px;
+  padding: 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.navigation__link--search:current .navigation__icon {
+  fill: #FCFCFC;
 }
 
 .navigation__link--enter {
   padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.navigation__link--enter:current .navigation__icon {
+  fill: #FCFCFC;
+}
+
+.navigation__link--enter .navigation__icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
 }
 
 .navigation__link--cart {
   padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 30px;
+}
+
+.navigation__link--cart .navigation__icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
 }
 
 .page__index--container {
