@@ -110,6 +110,43 @@ body {
   background-clip: padding-box;
 }
 
+.btn__dark {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  background-clip: padding-box;
+  border-radius: 26px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.btn__dark:hover {
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #FF2F64;
+  background-clip: padding-box;
+}
+
+.btn__dark:active {
+  background-color: #FEAFC3;
+  outline: 2px solid #2D3440;
+  background-clip: padding-box;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.btn__dark:focus {
+  background-color: #FF2F64;
+  outline: 2px solid #2D3440;
+  background-clip: padding-box;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.btn__dark:disabled {
+  color: #565C66;
+  background-color: #B9B9B9;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  background-clip: padding-box;
+}
+
 .navigation {
   display: flex;
   padding: 24px 0;
@@ -784,6 +821,49 @@ body {
   padding-left: 64px;
 }
 
+.benefits__item--ice {
+  position: relative;
+  background-image: url("../images/ice_cream.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: 8px 8px;
+}
+
+.benefits__item--cow {
+  position: relative;
+  background-image: url("../images/cow.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: 8px 8px;
+}
+
+.benefits__item--leaf {
+  position: relative;
+  background-image: url("../images/leaf.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: 8px 8px;
+}
+
+.benefits__item--thermometer {
+  position: relative;
+  background-image: url("../images/thermometer.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: 8px 8px;
+}
+
+.benefits__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+}
+
 .benefits__item-desc {
   max-width: 442px;
   margin: 0;
@@ -976,6 +1056,7 @@ body {
 }
 
 .contacts__addres-text {
+  min-width: 263px;
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
@@ -1005,14 +1086,6 @@ body {
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-}
-
-.contacts__feedback-btn {
-  display: block;
-  color: #FCFCFC;
-  background-color: #FF2F64;
-  border-radius: 26px;
-  outline: 4px solid rgba(255, 47, 100, 0.3);
 }
 
 .page__footer {
