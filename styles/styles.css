@@ -1422,7 +1422,7 @@ body {
 .pagination__link--prev .pagination__icon {
   position: absolute;
   top: 4px;
-  left: 0;
+  left: 4px;
   display: block;
   width: 16px;
   height: 16px;
@@ -1437,7 +1437,7 @@ body {
 .pagination__link--next .pagination__icon{
   position: absolute;
   top: 4px;
-  right: 0;
+  right: 4px;
   display: block;
   width: 16px;
   height: 16px;
