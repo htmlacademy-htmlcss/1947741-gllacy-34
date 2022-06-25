@@ -1274,12 +1274,12 @@ body {
 .catalog__filter-group {
   margin-right: 24px;
   margin-bottom: 16px;
+  border: none;
 }
 
 .catalog__filter-group:nth-last-of-type(1) {
   margin-right: 16px;
   margin-bottom: 0;
-  border: none;
 }
 
 .catalog__filter-select {
@@ -1361,10 +1361,7 @@ body {
 }
 
 .pagination__show-more {
-  display: block;
   margin-right: 335px;
-  color: #2D3440;
-  background-color:#FCFCFC;
 }
 
 .pagination__list {
@@ -1385,24 +1382,64 @@ body {
 
 .pagination__link {
   display: block;
+  width: 24px;
+  height: 24px;
   padding: 2px 8px;
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+  border-radius: 50px;
 }
 
 .pagination__link--current {
   background-color: #FCFCFC;
 }
 
-.pagination__link--prev {
-  width: 6px;
-  height: 10px;
-  padding: 3px 5px;
+.pagination__link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
-.pagination__link--next {
-  width: 6px;
-  height: 10px;
-  padding: 3px 5px;
+.pagination__link:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 1px solid #FCFCFC;
+  background-clip: padding-box;
+}
+
+.pagination__link:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 1px solid #2D3440;
+  background-clip: padding-box;
+}
+
+.pagination__link:current {
+  background-color: #FCFCFC;
+}
+
+.pagination__link--prev {
+  position: relative;
+}
+
+.pagination__link--prev .pagination__icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: #2D3440;
+  opacity: 0.3;
+}
+
+.pagination__link--next{
+  position: relative;
+}
+
+.pagination__link--next .pagination__icon{
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: #2D3440;
 }
