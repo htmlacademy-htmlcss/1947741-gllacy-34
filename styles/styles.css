@@ -1430,11 +1430,11 @@ body {
   opacity: 0.3;
 }
 
-.pagination__link--next{
+.pagination__link--next {
   position: relative;
 }
 
-.pagination__link--next .pagination__icon{
+.pagination__link--next .pagination__icon {
   position: absolute;
   top: 4px;
   right: 4px;
@@ -1442,4 +1442,9 @@ body {
   width: 16px;
   height: 16px;
   fill: #2D3440;
+}
+
+.page__footer--border {
+  padding-top: 47px;
+  border-top: 1px solid rgba(252, 252, 252, 0.3);
 }
