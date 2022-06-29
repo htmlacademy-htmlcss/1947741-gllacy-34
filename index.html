@@ -407,20 +407,38 @@
             </p>
             <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group delivery__form-data">
-                <label class="delivery__form-label" for="delivery__data">Дата</label>
-                <button class="delivery__form--info"><span class="visually-hidden">Посмотреть дополнительную
-                    информацию</span></button>
-                <input id="delivery__data" type="text" name="delivery__data" placeholder="01.04.2020" required>
+                <span class="delivery__form-container">
+                  <label class="delivery__form-label" for="delivery__data">Дата</label>
+                  <button class="delivery__form--info">
+                    <svg class="delivery__form-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
+                    </svg>
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                </span>
+                <input class="delivery__form-input" id="delivery__data" type="text" name="delivery__data"
+                  placeholder="01.04.2020" required>
               </p>
               <p class="field-group delivery__form-tel">
                 <label class="delivery__form-label" for="delivery__tel">Телефон</label>
-                <input id="delivery__tel" type="tel" name="delivery__tel" placeholder="+7 800 999-00-00">
+                <input class="delivery__form-input" id="delivery__tel" type="tel" name="delivery__tel"
+                  placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group delivery__form-address">
-                <label class="delivery__form-label" for="delivery__address">Адрес</label>
-                <button class="delivery__form--info"><span class="visually-hidden">Посмотреть дополнительную
-                    информацию</span></button>
-                <input id="delivery__address" type="text" name="delivery__address"
+                <span class="delivery__form-container">
+                  <label class="delivery__form-label" for="delivery__data">Адрес</label>
+                  <button class="delivery__form--info">
+                    <svg class="delivery__form-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
+                    </svg>
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  </button>
+                </span>
+                <input class="delivery__form-input" id="delivery__address" type="text" name="delivery__address"
                   placeholder="ул. Большая Конюшенная, 19/8" required>
               </p>
               <button class="delivery__btn btn btn__dark" type="submit">Отправить</button>

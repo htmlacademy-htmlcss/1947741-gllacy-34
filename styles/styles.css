@@ -1021,10 +1021,10 @@ body {
 
 .newsletter__email {
   min-width: 332px;
-  min-height: 52px;
   margin-right: 14px;
-  padding: 0;
+  padding: 13px 14px;
   font-family: inherit;
+  font-size: 16px;
   line-height: 20px;
   color: #B9B9B9;
 }
@@ -1047,7 +1047,7 @@ body {
 
 .delivery__text {
   max-width: 371px;
-  padding: 103px 0 99px 0;
+  padding: 104px 0 99px 0;
 }
 
 .delivery__text-title {
@@ -1083,8 +1083,9 @@ body {
   display: grid;
   grid-template-columns: 117px 287px;
   column-gap: 16px;
-  row-gap: 20px;
+  row-gap: 19px;
 }
+
 .delivery__btn {
   font-size: 16px;
 }
@@ -1099,19 +1100,45 @@ body {
   grid-column: 1/-1;
 }
 
+.delivery__form-container {
+  display: flex;
+  margin-right: 4px;
+  align-items: center;
+}
+
 .delivery__form-label {
+  margin-bottom: 9px;
   font-weight: 700;
   line-height: 20px;
 }
 
 .delivery__form--info {
-  display: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  margin-top: -9px;
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
 }
 
-.field-group input {
+.delivery__form-icon {
+  fill: #2D3440;
+}
+
+.delivery__form-input {
+  margin: 0;
+  padding: 14px 16px 12px 15px;
   font-family: inherit;
+  font-size: 16px;
   line-height: 20px;
   color: #B9B9B9;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
 }
 
 .delivery__btn {
