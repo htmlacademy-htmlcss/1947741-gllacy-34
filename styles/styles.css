@@ -1007,7 +1007,7 @@ body {
 .newsletter {
   min-width: 506px;
   margin: 0;
-  padding: 26px;
+  padding: 26px 26px 29px;
   background-color: #FFFFFF;
   border-radius: 16px;
 }
@@ -1026,6 +1026,42 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  color: #B9B9B9;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.input:hover {
+  border: 1px solid #2D3440;
+}
+
+.input:focus {
+  padding: 13px 15px 11px 14px;
+  border: 2px solid #2D3440;
+}
+
+.input:disabled {
+  color: rgb(45, 52, 64, 0.65);
+  background-color: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
+.input:disabled:hover {
+  color: #2D3440;
+  background-color: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
+.input--error {
+  border: 1px solid #EA5454;
+}
+
+.input--error:hover {
+  padding: 13px 15px 11px 14px;
+  border: 2px solid #EA5454;
+}
+
+.input::placeholder {
   color: #B9B9B9;
 }
 
@@ -1136,7 +1172,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  color: #B9B9B9;
+  color: #2D3440;;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
 }
