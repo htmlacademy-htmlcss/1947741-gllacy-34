@@ -205,6 +205,10 @@ body {
   margin-left: auto;
 }
 
+.navigation__item {
+  position: relative;
+}
+
 .navigation__link {
   position: relative;
   display: block;
@@ -714,7 +718,7 @@ body {
 .gift__item-desc {
   max-width: 328px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   padding: 0;
 }
 
@@ -975,7 +979,7 @@ body {
 .container__preview-newsletter {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 
 .preview {
@@ -1023,7 +1027,7 @@ body {
 
 .newsletter__desc {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
   padding: 0;
   color: #565C66;
 }
@@ -1081,11 +1085,12 @@ body {
 .delivery {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 79px;
-  padding: 64px 64px 64px 100px;
+  margin-bottom: 80px;
+  padding: 64px 64px 62px 100px;
   background-color: #FCFCFC;
   background-image: url("../images/ice_cream-delivery.jpg");
   background-repeat: no-repeat;
+  background-position: top -2px left;
   background-size: cover;
   border-radius: 16px;
 }
@@ -1119,7 +1124,7 @@ body {
 
 .delivery__desc {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding: 0;
   color: #565C66;
 }
@@ -1128,11 +1133,7 @@ body {
   display: grid;
   grid-template-columns: 117px 287px;
   column-gap: 16px;
-  row-gap: 19px;
-}
-
-.delivery__btn {
-  font-size: 16px;
+  row-gap: 20px;
 }
 
 .field-group {
@@ -1152,7 +1153,7 @@ body {
 }
 
 .delivery__form-label {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-weight: 700;
   line-height: 20px;
 }
@@ -1177,7 +1178,7 @@ body {
 
 .delivery__form-input {
   margin: 0;
-  padding: 14px 16px 12px 15px;
+  padding: 13px 16px 12px 15px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -1189,7 +1190,8 @@ body {
 .delivery__btn {
   grid-column: 1/-1;
   justify-self: center;
-  margin-top: 12px;
+  margin-top: 14px;
+  font-size: 16px;
 }
 
 .wrapper__contacts {
@@ -1216,7 +1218,7 @@ body {
 .contacts__address-subtitle {
   max-width: 179px;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -1788,4 +1790,128 @@ body {
 .page__footer--border {
   padding-top: 50px;
   border-top: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.popover {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  display: none;
+  width: 441px;
+  min-height: 156px;
+  padding: 48px 48px 40px 48px;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.popover__open {
+  display: block;
+}
+
+.popover__content{
+  height: 100%;
+}
+
+.popover__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.popover__cart-items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popover__cart-item {
+  display: grid;
+  grid-template-columns: 46px 148px 83px 16px;
+  column-gap: 16px;
+  row-gap: 4px;
+  margin-bottom: 24px;
+}
+
+.popover__cart-item:last-child {
+  margin-bottom: 32px;
+}
+
+.popover__cart-image {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  width: 46px;
+  height: 46px;
+}
+
+.popover__cart-title {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.popover__cart-description {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 0;
+  color: #B9B9B9;
+}
+
+.popover__cart-price {
+  grid-row: 1/3;
+  grid-column: 3/4;
+  align-self: center;
+  font-size: 18px;
+  line-height: 22px;
+  word-spacing: 2px;
+}
+
+.popover__cart-delete {
+  grid-row: 1/3;
+  grid-column: 4/5;
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.popover__cart-delete::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 3px right 3px;
+}
+
+.popover__order {
+  display: flex;
+  align-items: center;
+  padding-top: 23px;
+  border-top: 1px solid #E7E7E7;
+}
+
+.popover__order-btn {
+  margin-right: 32px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover__order-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  word-spacing: 1px;
 }

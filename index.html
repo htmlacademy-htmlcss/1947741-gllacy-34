@@ -58,6 +58,38 @@
                 </svg>
                 <span class="visually-hidden">Корзина.</span>2 товара
               </a>
+
+              <div class="popover popover__cart popover__open">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="popover__title">Корзина</h2>
+                  <ul class="popover__cart-items">
+                    <li class="popover__cart-item">
+                      <img class="popover__cart-image" src="/images/product_cards/ice_cream_scoop-raspberry.jpg"
+                        alt="Шарик мороженого Малинка.">
+                      <h3 class="popover__cart-title">Малинка</h3>
+                      <p class="popover__cart-description">1 кг х 310 ₽</p>
+                      <b class="popover__cart-price">310 ₽</b>
+                      <button class="popover__cart-delete" type="button"><span class="visually-hidden">Удалить из
+                          корзины.</span></button>
+                    </li>
+                    <li class="popover__cart-item">
+                      <img class="popover__cart-image" src="/images/product_cards/ice_cream_scoop-bubble_gum.jpg"
+                        alt="Шарик мороженого Бабл-гам.">
+                      <h3 class="popover__cart-title">Бабл-гам</h3>
+                      <p class="popover__cart-description">1,5 кг х 320 ₽</p>
+                      <b class="popover__cart-price">480 ₽</b>
+                      <button class="popover__cart-delete" type="button"><span class="visually-hidden">Удалить из
+                          корзины.</span></button>
+                    </li>
+                  </ul>
+                  <div class="popover__order">
+                    <button class="popover__order-btn btn btn__dark">Оформить заказ</button>
+                    <p class="popover__order-text">Итого: 790&nbsp;₽</p>
+                  </div>
+                </div>
+              </div>
+
             </li>
           </ul>
         </nav>
