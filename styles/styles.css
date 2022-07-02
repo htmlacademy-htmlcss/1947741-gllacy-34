@@ -1793,19 +1793,32 @@ body {
 }
 
 .popover {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  z-index: 1;
   display: none;
-  width: 441px;
-  min-height: 156px;
-  padding: 48px 48px 40px 48px;
   font-family: "Inter", "Arial", sans-serif;
   color: #2D3440;
   background-color: #FCFCFC;
   border-radius: 4px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.popover__cart {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  width: 441px;
+  min-height: 156px;
+  padding: 48px 48px 40px 48px;
+}
+
+.popover__cart-empty {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  width: 288px;
+  min-height: 156px;
+  padding: 25px 0 23px;
 }
 
 .popover__open {
@@ -1914,4 +1927,11 @@ body {
   line-height: 22px;
   font-weight: 700;
   word-spacing: 1px;
+}
+
+.popover__text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
 }
