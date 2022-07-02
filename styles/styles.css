@@ -264,7 +264,7 @@ body {
 }
 
 .navigation__link--current {
-  padding: 8px 15px 7px 14px;
+  padding: 6px 15px 6px 14px;
   color: #FCFCFC;
   background-color: #FF4A78;
   border-radius: 30px;
@@ -298,6 +298,10 @@ body {
   padding-top: 1px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.navigation__link--tel:hover {
+  color: #FCFCFC;
 }
 
 .navigation__link--search {
@@ -988,7 +992,7 @@ body {
   background-color: #FCFCFC;
   background-image: url("../images/serving_method.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 16px;
 }
 
@@ -1013,7 +1017,7 @@ body {
   padding: 6px;
   background-image: url("../images/red-blue_stripes.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 16px;
 }
 
@@ -1033,7 +1037,7 @@ body {
 }
 
 .newsletter__email {
-  min-width: 332px;
+  width: 332px;
   margin-right: 14px;
   padding: 13px 14px;
   font-family: inherit;
@@ -1049,8 +1053,7 @@ body {
 }
 
 .input:focus {
-  padding: 13px 15px 11px 14px;
-  border: 2px solid #2D3440;
+  border: 1px solid #2D3440;
 }
 
 .input:disabled {
@@ -1070,8 +1073,7 @@ body {
 }
 
 .input--error:hover {
-  padding: 13px 15px 11px 14px;
-  border: 2px solid #EA5454;
+  border: 1px solid #EA5454;
 }
 
 .input::placeholder {
@@ -1314,6 +1316,14 @@ body {
   background-position: -1px 1px;
 }
 
+.more__link:hover {
+  font-weight: 700;
+}
+
+.more__link:focus {
+  color: #FCFCFC
+}
+
 .page__footer-author {
   margin-left: auto;
 }
@@ -1326,6 +1336,8 @@ body {
 
 .author__img {
   display: block;
+  width: 93px;
+  height: 27px;
 }
 
 .author__text {
@@ -1339,6 +1351,11 @@ body {
   color: #2D3440;
   text-decoration: none;
   border-bottom: 1px solid rgb(45, 52, 64, 0.5);
+}
+
+.author__link:hover {
+  color: #FCFCFC;
+  border-bottom: 1px solid #FCFCFC;
 }
 
 /*catalog*/
@@ -1387,6 +1404,10 @@ body {
 .breadcrumbs__link {
   color: #2D3440;
   text-decoration: none;
+}
+
+.breadcrumbs__link:not(.breadcrumbs__link--current):hover {
+  color: #FCFCFC;
 }
 
 .breadcrumbs__link--current {
@@ -1610,7 +1631,7 @@ body {
   border-radius: 50%;
 }
 
-.control__input[type="radio"]:checked + .control__mark:hover::before {
+.control__input[type="radio"]:checked:hover + .control__mark::before {
   background-color: #FCFCFC;
 }
 
@@ -1624,7 +1645,7 @@ body {
   border: none;
 }
 
-.control__input[type="checkbox"]:checked + .control__mark-square:hover {
+.control__input[type="checkbox"]:checked:hover + .control__mark-square {
   background-image: url("../images/check-on-hover.svg");
   background-repeat: no-repeat;
   border: none;
@@ -1698,7 +1719,7 @@ body {
 .catalog__pagination {
   display: flex;
   justify-content: flex-end;
-  padding: 42px 0;
+  padding: 41px 0 43px;
 }
 
 .pagination__show-more {
@@ -1727,7 +1748,7 @@ body {
   display: block;
   width: 24px;
   height: 24px;
-  padding: 2px 9px;
+  padding: 2px 8px;
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
@@ -1801,6 +1822,24 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
+.popover__search {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  width: 356px;
+  padding: 24px 16px 24px;
+}
+
+.popover__enter {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  width: 420px;
+  padding: 49px 48px 51px 48px;
+}
+
 .popover__cart {
   position: absolute;
   top: 40px;
@@ -1836,6 +1875,60 @@ body {
   line-height: 30px;
   font-weight: 700;
   color: #2D3440;
+}
+
+.popover__enter .popover__title {
+  margin-bottom: 30px;
+}
+
+.popover__field {
+  margin-bottom: 15px;
+}
+
+.popover__input {
+  width: 324px;
+  padding: 13px 15px 12px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.popover__controls {
+  display: flex;
+  margin-top: 34px;
+}
+
+.popover__enter-btn {
+  margin-right: 23px;
+  padding-right: 33px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover__links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1px;
+}
+
+.popover__link {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.popover__link-text {
+  border-bottom: 1px solid #2D3440;
+}
+
+.popover__link:last-child {
+  margin-bottom: 0;
 }
 
 .popover__cart-items {

@@ -39,6 +39,18 @@
                 </svg>
                 <span class="visually-hidden">Поиск.</span>
               </a>
+
+              <div class="popover popover__search">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Поиск.</h2>
+                  <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="popover__search">Поиск.</label>
+                    <input class="popover__input input" id="popover__search" type="text" placeholder="Поиск по сайту"
+                      name="popover__search" required>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--enter" href="#">
@@ -48,6 +60,32 @@
                     d="M9 1.6667A.6667.6667 0 0 1 9.6667 1h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H9.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V3a.6664.6664 0 0 0-.6667-.6667H9.6667A.6667.6667 0 0 1 9 1.6667ZM5.8619 3.8619a.6667.6667 0 0 1 .9428 0l3.3291 3.3291a.6624.6624 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 8.3333H1.6668a.6667.6667 0 1 1 0-1.3333h6.3905L5.8619 4.8047a.6667.6667 0 0 1 0-.9428Z" />
                 </svg>Вход
               </a>
+
+              <div class="popover popover__enter">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="popover__title">Личный кабинет</h2>
+                  <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <p class="popover__field">
+                      <label class="visually-hidden" for="popover__email">Email.</label>
+                      <input class="popover__input input" id="popover__email" type="email"
+                        placeholder="email@example.com" name="popover__email" value="email@example.com" required>
+                    </p>
+                    <p class="popover__field">
+                      <label class="visually-hidden" for="popover__password">Password.</label>
+                      <input class="popover__input input" id="popover__password" type="password"
+                        name="popover__password" value="123456" required>
+                    </p>
+                    <div class="popover__controls">
+                      <button class="popover__enter-btn btn btn__dark" type="button">Войти</button>
+                      <div class="popover__links">
+                        <a class="popover__link" href="#"><span class="popover__link-text">Забыли пароль?</span></a>
+                        <a class="popover__link" href="#"><span class="popover__link-text">Регистрация</span></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--cart" href="#">
@@ -93,7 +131,7 @@
               <div class="popover popover__cart-empty">
                 <!--Для отображения поповера использовать класс popover__open-->
                 <div class="popover__content">
-                  <h2 class="visually-hidden">Корзина</h2>
+                  <h2 class="visually-hidden">Корзина.</h2>
                   <p class="popover__text">Ваша корзина пока пуста</p>
                 </div>
               </div>
