@@ -629,6 +629,40 @@
           </p>
         </section>
       </footer>
+
+      <div class="modal__container">
+        <!-- Для закрытия модального окна использовать класс modal__close -->
+        <div class="modal modal__feedback">
+          <button class="modal__close-btn">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+          <section class="model__content">
+            <h2 class="visually-hidden">Форма обратной связи.</h2>
+            <p class="modal__text">Мы обязательно ответим вам!</p>
+            <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="modal__field">
+                <label class="visually-hidden" for="modal__name">Ваше имя</label>
+                <input class="modal__input input" id="modal__name" type="text" placeholder="Имя и фамилия"
+                  name="modal__email" required>
+              </p>
+              <p class="modal__field">
+                <label class="visually-hidden" for="modal__email">Email.</label>
+                <input class="modal__input input" id="modal__email" type="email" placeholder="email@example.com"
+                  name="modal__email" required>
+              </p>
+              <p class="modal__field">
+                <label class="visually-hidden" for="modal__text">Ваше имя</label>
+                <textarea class="modal__textarea input" id="modal__text" name="modal__text" rows="6">В свободной форме
+                </textarea>
+              </p>
+              <div class="modal__wrapper">
+                <button class="modal__btn btn btn__dark">Отправить</button>
+              </div>
+            </form>
+          </section>
+
+        </div>
+      </div>
     </div>
   </body>
 
