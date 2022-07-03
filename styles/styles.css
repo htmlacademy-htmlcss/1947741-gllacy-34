@@ -1822,6 +1822,16 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
+.popover__dropdown {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 1;
+  min-width: 135px;
+  padding: 9px 0 9px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
 .popover__search {
   position: absolute;
   top: 40px;
@@ -1877,6 +1887,38 @@ body {
   color: #2D3440;
 }
 
+.popover__dropdown-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popover__dropdown-item {
+  padding: 0 14px 0 15px;
+}
+
+.popover__dropdown-link {
+  display: block;
+  padding: 9px 0 2px 2px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+}
+
+.popover__dropdown-link--current {
+  display: block;
+  padding: 9px 0 9px 2px;
+  font-weight: 700;
+  border-bottom: 1px solid #B9B9B9;
+}
+
+.popover__dropdown-item:hover {
+  background-color: #FFCBD8;
+}
+
 .popover__enter .popover__title {
   margin-bottom: 30px;
 }
@@ -1895,6 +1937,11 @@ body {
   background-color: #FFFFFF;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+}
+
+.popover__input[type="password"] {
+  padding-left: 14px;
+  font-size: 13px;
 }
 
 .popover__controls {
