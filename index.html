@@ -127,7 +127,7 @@
                   <h2 class="popover__title">Корзина</h2>
                   <ul class="popover__cart-items">
                     <li class="popover__cart-item">
-                      <img class="popover__cart-image" src="/images/product_cards/ice_cream_scoop-raspberry.jpg"
+                      <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-raspberry.jpg"
                         alt="Шарик мороженого Малинка.">
                       <h3 class="popover__cart-title">Малинка</h3>
                       <p class="popover__cart-description">1 кг х 310 ₽</p>
@@ -136,7 +136,7 @@
                           корзины.</span></button>
                     </li>
                     <li class="popover__cart-item">
-                      <img class="popover__cart-image" src="/images/product_cards/ice_cream_scoop-bubble_gum.jpg"
+                      <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-bubble_gum.jpg"
                         alt="Шарик мороженого Бабл-гам.">
                       <h3 class="popover__cart-title">Бабл-гам</h3>
                       <p class="popover__cart-description">1,5 кг х 320 ₽</p>
@@ -508,16 +508,19 @@
             </p>
             <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group delivery__form-data">
-                <span class="delivery__form-container">
-                  <label class="delivery__form-label" for="delivery__data">Дата</label>
-                  <button class="delivery__form--info">
-                    <svg class="delivery__form-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
-                    </svg>
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
+                <span class="delivery__form-label">
+                  <label class="delivery__form-label delivery__form-label--icon" for="delivery__data">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-data">
+                      <svg class="tooltip__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                        viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip__text tooltip__text-data" role="tooltip" id="tooltip-data">Укажите желаемую
+                      дату</span>
+                  </span>
                 </span>
                 <input class="delivery__form-input input" id="delivery__data" type="text" name="delivery__data"
                   placeholder="01.04.2020" required>
@@ -528,16 +531,20 @@
                   placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group delivery__form-address">
-                <span class="delivery__form-container">
-                  <label class="delivery__form-label" for="delivery__data">Адрес</label>
-                  <button class="delivery__form--info">
-                    <svg class="delivery__form-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                      viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
-                    </svg>
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
+                <span class="delivery__form-label">
+                  <label class="delivery__form-label delivery__form-label--icon" for="delivery__data">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-text">
+                      <svg class="tooltip__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                        viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip__text tooltip__text-address" role="tooltip" id="tooltip-text">Введите название
+                      улицы, дома и
+                      квартиры</span>
+                  </span>
                 </span>
                 <input class="delivery__form-input input" id="delivery__address" type="text" name="delivery__address"
                   placeholder="ул. Большая Конюшенная, 19/8" required>
@@ -630,7 +637,7 @@
         </section>
       </footer>
 
-      <div class="modal__container">
+      <div class="modal__container modal__close">
         <!-- Для закрытия модального окна использовать класс modal__close -->
         <div class="modal modal__feedback">
           <button class="modal__close-btn">
