@@ -18,6 +18,30 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current" href="catalog.html">Каталог</a>
+
+              <div class="popover popover__dropdown">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Выпадающее меню каталога.</h2>
+                  <ul class="popover__dropdown-list">
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Новинки</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link popover__dropdown-link--current" href="#">Сливочное</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Доставка и оплата</a>
@@ -39,6 +63,18 @@
                 </svg>
                 <span class="visually-hidden">Поиск.</span>
               </a>
+
+              <div class="popover popover__search">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Поиск.</h2>
+                  <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="popover__search">Поиск.</label>
+                    <input class="popover__input input" id="popover__search" type="text" placeholder="Поиск по сайту"
+                      name="popover__search" required>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--enter" href="#">
@@ -48,6 +84,32 @@
                     d="M9 1.6667A.6667.6667 0 0 1 9.6667 1h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H9.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V3a.6664.6664 0 0 0-.6667-.6667H9.6667A.6667.6667 0 0 1 9 1.6667ZM5.8619 3.8619a.6667.6667 0 0 1 .9428 0l3.3291 3.3291a.6624.6624 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 8.3333H1.6668a.6667.6667 0 1 1 0-1.3333h6.3905L5.8619 4.8047a.6667.6667 0 0 1 0-.9428Z" />
                 </svg>Вход
               </a>
+
+              <div class="popover popover__enter">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="popover__title">Личный кабинет</h2>
+                  <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <p class="popover__field">
+                      <label class="visually-hidden" for="popover__email">Email.</label>
+                      <input class="popover__input input" id="popover__email" type="email"
+                        placeholder="email@example.com" name="popover__email" value="email@example.com" required>
+                    </p>
+                    <p class="popover__field">
+                      <label class="visually-hidden" for="popover__password">Password.</label>
+                      <input class="popover__input input" id="popover__password" type="password"
+                        name="popover__password" value="123456" required>
+                    </p>
+                    <div class="popover__controls">
+                      <button class="popover__enter-btn btn btn__dark" type="button">Войти</button>
+                      <div class="popover__links">
+                        <a class="popover__link" href="#"><span class="popover__link-text">Забыли пароль?</span></a>
+                        <a class="popover__link" href="#"><span class="popover__link-text">Регистрация</span></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--cart" href="#">
@@ -58,6 +120,45 @@
                 </svg>
                 <span class="visually-hidden">Корзина.</span>2 товара
               </a>
+
+              <div class="popover popover__cart">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="popover__title">Корзина</h2>
+                  <ul class="popover__cart-items">
+                    <li class="popover__cart-item">
+                      <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-raspberry.jpg"
+                        alt="Шарик мороженого Малинка.">
+                      <h3 class="popover__cart-title">Малинка</h3>
+                      <p class="popover__cart-description">1 кг х 310 ₽</p>
+                      <b class="popover__cart-price">310 ₽</b>
+                      <button class="popover__cart-delete" type="button"><span class="visually-hidden">Удалить из
+                          корзины.</span></button>
+                    </li>
+                    <li class="popover__cart-item">
+                      <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-bubble_gum.jpg"
+                        alt="Шарик мороженого Бабл-гам.">
+                      <h3 class="popover__cart-title">Бабл-гам</h3>
+                      <p class="popover__cart-description">1,5 кг х 320 ₽</p>
+                      <b class="popover__cart-price">480 ₽</b>
+                      <button class="popover__cart-delete" type="button"><span class="visually-hidden">Удалить из
+                          корзины.</span></button>
+                    </li>
+                  </ul>
+                  <div class="popover__order">
+                    <button class="popover__order-btn btn btn__dark">Оформить заказ</button>
+                    <p class="popover__order-text">Итого: 790&nbsp;₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popover popover__cart-empty">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <p class="popover__text">Ваша корзина пока пуста</p>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -78,81 +179,119 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
+
           <form class="catalog__filters" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog__filter-group">
-              <legend class="catalog__filter-title">Сортировка:</legend>
-              <select class="catalog__filter-select" name="sorting">
-                <option value="popular">по популярности</option>
-                <option value="cheap">возрастание цены</option>
-                <option value="expensive">убывание цены</option>
-              </select>
-            </fieldset>
+            <div class="catalog__filters-container">
+              <fieldset class="catalog__filter-group">
+                <legend class="catalog__filter-title">Сортировка:</legend>
+                <select class="catalog__filter-select" name="sorting">
+                  <option value="popular">по популярности</option>
+                  <option value="cheap">возрастание цены</option>
+                  <option value="expensive">убывание цены</option>
+                </select>
+              </fieldset>
 
-            <fieldset class="catalog__filter-group">
-              <legend class="catalog__filter-title">Жирность:</legend>
-              <ul class="catalog__filter-list">
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="radio" name="fat__content" value="0%">
-                    0%
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="radio" name="fat__content" value="to__10%" checked>
-                    до 10%
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="radio" name="fat__content" value="to__30%">
-                    до 30%
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="radio" name="fat__content" value="above__30%">
-                    выше 30%
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="catalog__filter-group">
+                <legend class="visually-hidden">Цена:</legend>
+                <div class="catalog__filter-range range">
+                  <label class="range__control">Цена:<input class="range__input" type="number" name="min__price"
+                      value="100">₽ </label>
+                  <label class="range__control">–<input class="range__input" type="number" name="max__price"
+                      value="500">₽</label>
+                </div>
+                <div class="range__wrapper">
+                  <div class="range__scale">
+                    <div class="range__bar" style="left: 33px; width: 72px;">
+                      <button class="range__toggle toggle__min" type="button">
+                        <span class="visually-hidden">Изминить минимальную цену</span>
+                      </button>
+                      <button class="range__toggle toggle__max" type="button">
+                        <span class="visually-hidden">Изминить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
 
-            <fieldset class="catalog__filter-group">
-              <legend class="catalog__filter-title">Наполнители:</legend>
-              <ul class="catalog__filter-list">
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="checkbox" name="chocolate" checked>
-                    шоколадные
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="checkbox" name="sugar__sprinkles" checked>
-                    сахарные посыпки
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="checkbox" name="fruits">
-                    фрукты
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="checkbox" name="syrups">
-                    сиропы
-                  </label>
-                </li>
-                <li class="catalog__filter-item">
-                  <label class="control">
-                    <input class="control__input" type="checkbox" name="jams">
-                    джемы
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="catalog__filter-group">
+                <legend class="catalog__filter-title">Жирность:</legend>
+                <ul class="catalog__filter-list">
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="fat__content" value="0%">
+                      <span class="control__mark"></span>
+                      <span class="control__label">0%</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="fat__content" value="to__10%"
+                        checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">до 10%</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="fat__content" value="to__30%">
+                      <span class="control__mark"></span>
+                      <span class="control__label">до 30%</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="fat__content" value="above__30%">
+                      <span class="control__mark"></span>
+                      <span class="control__label">выше 30%</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="catalog__filters-container">
+              <fieldset class="catalog__filter-group">
+                <legend class="catalog__filter-title">Наполнители:</legend>
+                <ul class="catalog__filter-list catalog__filter-list--square">
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="chocolate" checked>
+                      <span class="control__mark control__mark-square"></span>
+                      <span class="control__label">шоколадные</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="sugar__sprinkles" checked>
+                      <span class="control__mark control__mark-square"></span>
+                      <span class="control__label">сахарные посыпки</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="fruits">
+                      <span class="control__mark control__mark-square"></span>
+                      <span class="control__label">фрукты</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="syrups">
+                      <span class="control__mark control__mark-square"></span>
+                      <span class="control__label">сиропы</span>
+                    </label>
+                  </li>
+                  <li class="catalog__filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="jams">
+                      <span class="control__mark control__mark-square"></span>
+                      <span class="control__label">джемы</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
             <button class="catalog__filters-btn btn" type="submit">Применить</button>
           </form>
 

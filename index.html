@@ -18,6 +18,30 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог</a>
+
+              <div class="popover popover__dropdown">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Выпадающее меню каталога.</h2>
+                  <ul class="popover__dropdown-list">
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link popover__dropdown-link--current" href="#">Новинки</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Сливочное</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="popover__dropdown-item">
+                      <a class="popover__dropdown-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--delivery" href="#">Доставка и оплата</a>
@@ -39,6 +63,18 @@
                 </svg>
                 <span class="visually-hidden">Поиск.</span>
               </a>
+
+              <div class="popover popover__search">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Поиск.</h2>
+                  <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="visually-hidden" for="popover__search">Поиск.</label>
+                    <input class="popover__input input" id="popover__search" type="text" placeholder="Поиск по сайту"
+                      name="popover__search" required>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--enter" href="#">
@@ -48,6 +84,32 @@
                     d="M9 1.6667A.6667.6667 0 0 1 9.6667 1h2.6666a1.9997 1.9997 0 0 1 2 2v9.3333a1.9996 1.9996 0 0 1-2 2H9.6667a.6666.6666 0 1 1 0-1.3333h2.6666a.6664.6664 0 0 0 .4714-.1953.6664.6664 0 0 0 .1953-.4714V3a.6664.6664 0 0 0-.6667-.6667H9.6667A.6667.6667 0 0 1 9 1.6667ZM5.8619 3.8619a.6667.6667 0 0 1 .9428 0l3.3291 3.3291a.6624.6624 0 0 1 .129.177.664.664 0 0 1 .0705.2987.6636.6636 0 0 1-.1998.4759l-3.3288 3.3288a.6667.6667 0 1 1-.9428-.9428L8.057 8.3333H1.6668a.6667.6667 0 1 1 0-1.3333h6.3905L5.8619 4.8047a.6667.6667 0 0 1 0-.9428Z" />
                 </svg>Вход
               </a>
+
+              <div class="popover popover__enter">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="popover__title">Личный кабинет</h2>
+                  <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <p class="popover__field">
+                      <label class="visually-hidden" for="popover__email">Email.</label>
+                      <input class="popover__input input" id="popover__email" type="email"
+                        placeholder="email@example.com" name="popover__email" value="email@example.com" required>
+                    </p>
+                    <p class="popover__field">
+                      <label class="visually-hidden" for="popover__password">Password.</label>
+                      <input class="popover__input input" id="popover__password" type="password"
+                        name="popover__password" value="123456" required>
+                    </p>
+                    <div class="popover__controls">
+                      <button class="popover__enter-btn btn btn__dark" type="button">Войти</button>
+                      <div class="popover__links">
+                        <a class="popover__link" href="#"><span class="popover__link-text">Забыли пароль?</span></a>
+                        <a class="popover__link" href="#"><span class="popover__link-text">Регистрация</span></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--cart" href="#">
@@ -58,6 +120,45 @@
                 </svg>
                 <span class="visually-hidden">Корзина.</span>2 товара
               </a>
+
+              <div class="popover popover__cart">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="popover__title">Корзина</h2>
+                  <ul class="popover__cart-items">
+                    <li class="popover__cart-item">
+                      <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-raspberry.jpg"
+                        alt="Шарик мороженого Малинка.">
+                      <h3 class="popover__cart-title">Малинка</h3>
+                      <p class="popover__cart-description">1 кг х 310 ₽</p>
+                      <b class="popover__cart-price">310 ₽</b>
+                      <button class="popover__cart-delete" type="button"><span class="visually-hidden">Удалить из
+                          корзины.</span></button>
+                    </li>
+                    <li class="popover__cart-item">
+                      <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-bubble_gum.jpg"
+                        alt="Шарик мороженого Бабл-гам.">
+                      <h3 class="popover__cart-title">Бабл-гам</h3>
+                      <p class="popover__cart-description">1,5 кг х 320 ₽</p>
+                      <b class="popover__cart-price">480 ₽</b>
+                      <button class="popover__cart-delete" type="button"><span class="visually-hidden">Удалить из
+                          корзины.</span></button>
+                    </li>
+                  </ul>
+                  <div class="popover__order">
+                    <button class="popover__order-btn btn btn__dark">Оформить заказ</button>
+                    <p class="popover__order-text">Итого: 790&nbsp;₽</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popover popover__cart-empty">
+                <!--Для отображения поповера использовать класс popover__open-->
+                <div class="popover__content">
+                  <h2 class="visually-hidden">Корзина.</h2>
+                  <p class="popover__text">Ваша корзина пока пуста</p>
+                </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -386,8 +487,8 @@
                 и&nbsp;не&nbsp;слать всякой ненужной ерунды. Честно =)</p>
               <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="visually-hidden" for="newsletter__email">Email.</label>
-                <input class="newsletter__email" id="newsletter__email" type="email" placeholder="email@example.com"
-                  name="newsletter-email" required>
+                <input class="newsletter__email input" id="newsletter__email" type="email"
+                  placeholder="email@example.com" name="newsletter-email" required>
                 <button class="newsletter__btn btn btn__dark" type="submit">Отправить</button>
               </form>
             </section>
@@ -407,20 +508,45 @@
             </p>
             <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="field-group delivery__form-data">
-                <label class="delivery__form-label" for="delivery__data">Дата</label>
-                <button class="delivery__form--info"><span class="visually-hidden">Посмотреть дополнительную
-                    информацию</span></button>
-                <input id="delivery__data" type="text" name="delivery__data" placeholder="01.04.2020" required>
+                <span class="delivery__form-label">
+                  <label class="delivery__form-label delivery__form-label--icon" for="delivery__data">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-data">
+                      <svg class="tooltip__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                        viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-data">Укажите желаемую
+                      дату</span>
+                  </span>
+                </span>
+                <input class="delivery__form-input input" id="delivery__data" type="text" name="delivery__data"
+                  placeholder="01.04.2020" required>
               </p>
               <p class="field-group delivery__form-tel">
                 <label class="delivery__form-label" for="delivery__tel">Телефон</label>
-                <input id="delivery__tel" type="tel" name="delivery__tel" placeholder="+7 800 999-00-00">
+                <input class="delivery__form-input input" id="delivery__tel" type="tel" name="delivery__tel"
+                  placeholder="+7 800 999-00-00">
               </p>
               <p class="field-group delivery__form-address">
-                <label class="delivery__form-label" for="delivery__address">Адрес</label>
-                <button class="delivery__form--info"><span class="visually-hidden">Посмотреть дополнительную
-                    информацию</span></button>
-                <input id="delivery__address" type="text" name="delivery__address"
+                <span class="delivery__form-label">
+                  <label class="delivery__form-label delivery__form-label--icon" for="delivery__data">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-text">
+                      <svg class="tooltip__icon" aria-hidden="true" focusable="false" width="16" height="16"
+                        viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8.00027 2.33333c-3.12976 0-5.66694 2.53718-5.66694 5.66694 0 3.12973 2.53718 5.66693 5.66694 5.66693 3.12973 0 5.66693-2.5372 5.66693-5.66693 0-3.12976-2.5372-5.66694-5.66693-5.66694ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1c3.86613 0 7.00023 3.13413 7.00023 7.00027 0 3.86613-3.1341 7.00023-7.00023 7.00023C4.13413 15.0005 1 11.8664 1 8.00027Zm7.00006-.66695c.36819 0 .66666.29848.66666.66667v2.53341c0 .3682-.29847.6667-.66666.6667s-.66667-.2985-.66667-.6667V7.99999c0-.36819.29848-.66667.66667-.66667Zm0-2.53343c-.36819 0-.66667.29847-.66667.66666s.29848.66667.66667.66667h.00666c.36819 0 .66667-.29848.66667-.66667 0-.36819-.29848-.66666-.66667-.66666h-.00666Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-text">Введите название
+                      улицы, дома и
+                      квартиры</span>
+                  </span>
+                </span>
+                <input class="delivery__form-input input" id="delivery__address" type="text" name="delivery__address"
                   placeholder="ул. Большая Конюшенная, 19/8" required>
               </p>
               <button class="delivery__btn btn btn__dark" type="submit">Отправить</button>
@@ -510,6 +636,40 @@
           </p>
         </section>
       </footer>
+
+      <div class="modal__container modal__close">
+        <!-- Для закрытия модального окна использовать класс modal__close -->
+        <div class="modal modal__feedback">
+          <button class="modal__close-btn">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+          <section class="model__content">
+            <h2 class="visually-hidden">Форма обратной связи.</h2>
+            <p class="modal__text">Мы обязательно ответим вам!</p>
+            <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="modal__field">
+                <label class="visually-hidden" for="modal__name">Ваше имя</label>
+                <input class="modal__input input" id="modal__name" type="text" placeholder="Имя и фамилия"
+                  name="modal__email" required>
+              </p>
+              <p class="modal__field">
+                <label class="visually-hidden" for="modal__email">Email.</label>
+                <input class="modal__input input" id="modal__email" type="email" placeholder="email@example.com"
+                  name="modal__email" required>
+              </p>
+              <p class="modal__field">
+                <label class="visually-hidden" for="modal__text">Ваше имя</label>
+                <textarea class="modal__textarea input" id="modal__text" name="modal__text" rows="6">В свободной форме
+                </textarea>
+              </p>
+              <div class="modal__wrapper">
+                <button class="modal__btn btn btn__dark">Отправить</button>
+              </div>
+            </form>
+          </section>
+
+        </div>
+      </div>
     </div>
   </body>
 
