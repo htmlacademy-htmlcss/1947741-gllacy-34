@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -18,7 +19,7 @@
           </a>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Каталог</a>
+              <a class="navigation__link navigation__link--catalog" href="catalog.html">Каталог</a>
 
               <div class="popover popover__dropdown">
                 <!--Для отображения поповера использовать класс popover__open-->
@@ -26,7 +27,7 @@
                   <h2 class="visually-hidden">Выпадающее меню каталога.</h2>
                   <ul class="popover__dropdown-list">
                     <li class="popover__dropdown-item">
-                      <a class="popover__dropdown-link popover__dropdown-link--current" href="#">Новинки</a>
+                      <a class="popover__dropdown-link popover__dropdown-link--marked" href="#">Новинки</a>
                     </li>
                     <li class="popover__dropdown-item">
                       <a class="popover__dropdown-link" href="#">Сливочное</a>
@@ -71,7 +72,7 @@
                   <h2 class="visually-hidden">Поиск.</h2>
                   <form class="popover__form" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="popover__search">Поиск.</label>
-                    <input class="popover__input input" id="popover__search" type="text" placeholder="Поиск по сайту"
+                    <input class="popover__input input" id="popover__search" type="search" placeholder="Поиск по сайту"
                       name="popover__search" required>
                   </form>
                 </div>
@@ -129,7 +130,7 @@
                   <ul class="popover__cart-items">
                     <li class="popover__cart-item">
                       <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-raspberry.jpg"
-                        alt="Шарик мороженого Малинка.">
+                        width="46" height="46" alt="Шарик мороженого Малинка.">
                       <h3 class="popover__cart-title">Малинка</h3>
                       <p class="popover__cart-description">1 кг х 310 ₽</p>
                       <b class="popover__cart-price">310 ₽</b>
@@ -138,7 +139,7 @@
                     </li>
                     <li class="popover__cart-item">
                       <img class="popover__cart-image" src="./images/product_cards/ice_cream_scoop-bubble_gum.jpg"
-                        alt="Шарик мороженого Бабл-гам.">
+                        width="46" height="46" alt="Шарик мороженого Бабл-гам.">
                       <h3 class="popover__cart-title">Бабл-гам</h3>
                       <p class="popover__cart-description">1,5 кг х 320 ₽</p>
                       <b class="popover__cart-price">480 ₽</b>
@@ -147,7 +148,7 @@
                     </li>
                   </ul>
                   <div class="popover__order">
-                    <button class="popover__order-btn btn btn__dark">Оформить заказ</button>
+                    <button class="popover__order-btn btn btn__dark" type="button">Оформить заказ</button>
                     <p class="popover__order-text">Итого: 790&nbsp;₽</p>
                   </div>
                 </div>
@@ -203,7 +204,7 @@
               </div>
               <ol class="slider__item-content">
                 <li class="slider__item-picture slider__item-picture--main">
-                  <img class="slider__item-img" src="images/ice_cream_cone-banana.png" width="66" height="150"
+                  <img class="slider__item-img" src="images/ice_cream_cone-banana.png" width="306" height="507"
                     alt="Сливочное мороженое со вкусом банана.">
                 </li>
                 <li class="slider__item-picture slider__item-picture--next">
@@ -211,8 +212,8 @@
                     alt="Карамельный пломбир с маршмеллоу.">
                 </li>
                 <li class="slider__item-picture slider__item-picture--next">
-                  <img class="slider__item-img--next" src="images/ice_cream_cone-strawberry.png" width="306"
-                    height="507" alt="Нежный пломбир с клубничным джемом.">
+                  <img class="slider__item-img--next" src="images/ice_cream_cone-strawberry.png" width="66" height="150"
+                    alt="Нежный пломбир с клубничным джемом.">
                 </li>
               </ol>
             </div>
@@ -227,12 +228,12 @@
               </div>
               <ol class="slider__item-content">
                 <li class="slider__item-picture slider__item-picture--main">
-                  <img class="slider__item-img" src="images/ice_cream_cone-caramel.png" width="66" height="150"
+                  <img class="slider__item-img" src="images/ice_cream_cone-caramel.png" width="306" height="507"
                     alt="Карамельный пломбир с маршмеллоу.">
                 </li>
                 <li class="slider__item-picture slider__item-picture--next">
-                  <img class="slider__item-img--next" src="images/ice_cream_cone-strawberry.png" width="306"
-                    height="507" alt="Нежный пломбир с клубничным джемом.">
+                  <img class="slider__item-img--next" src="images/ice_cream_cone-strawberry.png" width="66" height="150"
+                    alt="Нежный пломбир с клубничным джемом.">
                 </li>
                 <li class="slider__item-picture slider__item-picture--next">
                   <img class="slider__item-img--next" src="images/ice_cream_cone-banana.png" width="66" height="150"
@@ -527,7 +528,7 @@
               <p class="field-group delivery__form-tel">
                 <label class="delivery__form-label" for="delivery__tel">Телефон</label>
                 <input class="delivery__form-input input" id="delivery__tel" type="tel" name="delivery__tel"
-                  placeholder="+7 800 999-00-00">
+                  placeholder="+7 800 999-00-00" required>
               </p>
               <p class="field-group delivery__form-address">
                 <span class="delivery__form-label">
@@ -657,12 +658,12 @@
                   name="modal__email" required>
               </p>
               <p class="modal__field">
-                <label class="visually-hidden" for="modal__text">Ваше имя</label>
+                <label class="visually-hidden" for="modal__text">Комментарий</label>
                 <textarea class="modal__textarea input" id="modal__text" name="modal__text" rows="6">В свободной форме
                 </textarea>
               </p>
               <div class="modal__wrapper">
-                <button class="modal__btn btn btn__dark">Отправить</button>
+                <button class="modal__btn btn btn__dark" type="submit">Отправить</button>
               </div>
             </form>
           </section>
