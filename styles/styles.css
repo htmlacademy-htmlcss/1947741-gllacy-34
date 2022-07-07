@@ -982,7 +982,7 @@ body {
 
 .wrapper__benefits {
   min-height: 480px;
-  margin-bottom: 80px;
+  margin-bottom: 79px;
   padding: 24px;
   background-image: url("../images/waffle.png");
   background-repeat: no-repeat;
@@ -1107,10 +1107,11 @@ body {
 }
 
 .wrapper__newsletter {
+  margin: auto 0;
   padding: 6px;
   background-image: url("../images/red-blue_stripes.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 16px;
 }
 
@@ -1846,7 +1847,7 @@ body {
 }
 
 .catalog__filter-list--fat {
-  max-width: 730px;
+  max-width: 710px;
 }
 
 .catalog__filter-list--square {
