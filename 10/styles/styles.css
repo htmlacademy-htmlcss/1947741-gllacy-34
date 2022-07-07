@@ -1000,7 +1000,7 @@ body {
 
 .benefits__desc {
   max-width: 995px;
-  margin: 1px auto 56px;
+  margin: 1px auto 54px;
   padding: 0;
   font-size: 32px;
   line-height: 46px;
@@ -1009,24 +1009,10 @@ body {
 }
 
 .benefits__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.benefits__row {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-}
-
-.benefits__row:last-child {
-  margin-bottom: 0;
-}
-
-.benefits__items {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 505px 505px;
+  column-gap: 32px;
+  row-gap: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1082,7 +1068,6 @@ body {
 .benefits__item-desc {
   max-width: 442px;
   margin: 0;
-  margin-left: -1px;
   padding: 0;
   color: #565c66;
 }
@@ -1122,10 +1107,11 @@ body {
 }
 
 .wrapper__newsletter {
+  margin: auto 0;
   padding: 6px;
   background-image: url("../images/red-blue_stripes.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 16px;
 }
 
@@ -1852,6 +1838,7 @@ body {
 
 .catalog__filter-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 8px 24px;
   list-style-type: none;
@@ -1859,7 +1846,12 @@ body {
   border-radius: 18px;
 }
 
+.catalog__filter-list--fat {
+  max-width: 710px;
+}
+
 .catalog__filter-list--square {
+  max-width: 960px;
   padding: 10px 24px 9px 24px;
 }
 
