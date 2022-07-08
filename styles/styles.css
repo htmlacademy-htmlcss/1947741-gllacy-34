@@ -277,6 +277,26 @@ body {
   position: relative;
 }
 
+.navigation__item:hover .popover:not(.popover__cart-empty) {
+  display: block;
+}
+
+.navigation__item:focus-within .popover:not(.popover__cart-empty) {
+  display: block;
+}
+
+.navigation__item:hover::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+  z-index: 1;
+}
+
 .navigation__link {
   position: relative;
   display: block;
@@ -1706,7 +1726,7 @@ body {
 .catalog__filters-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .catalog__filter-group {
@@ -1714,6 +1734,7 @@ body {
   margin: 0;
   margin-right: 24px;
   padding: 0;
+  padding-bottom: 7px;
   border: none;
 }
 
@@ -1846,10 +1867,6 @@ body {
   border-radius: 18px;
 }
 
-.catalog__filter-list--fat {
-  max-width: 710px;
-}
-
 .catalog__filter-list--square {
   max-width: 960px;
   padding: 10px 24px 9px 24px;
@@ -1885,12 +1902,20 @@ body {
   border: 1px solid #fcfcfc;
 }
 
+.control:focus .control__mark {
+  border: 1px solid #ff2f64;
+}
+
 .control__input:disabled + .control__mark {
   border: 1px solid rgba(45, 52, 64, 0.4);
 }
 
 .control:hover .control__mark-square {
   border: 1px solid #fcfcfc;
+}
+
+.control:focus .control__mark-square {
+  border: 1px solid #ff2f64;
 }
 
 .control__input:disabled + .control__mark-square {
@@ -1912,6 +1937,14 @@ body {
   background-color: #fcfcfc;
 }
 
+.control__input[type="radio"]:checked:focus + .control__mark {
+  border: 1px solid #ff2f64;
+}
+
+.control__input[type="radio"]:checked:focus + .control__mark::before {
+  background-color: #ff2f64;
+}
+
 .control__input[type="radio"]:checked:disabled + .control__mark::before {
   background-color: rgba(45, 52, 64, 0.4);
 }
@@ -1924,6 +1957,12 @@ body {
 
 .control__input[type="checkbox"]:checked:hover + .control__mark-square {
   background-image: url("../images/check-on-hover.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.control__input[type="checkbox"]:checked:focus + .control__mark-square {
+  background-image: url("../images/check-on-focus.svg");
   background-repeat: no-repeat;
   border: none;
 }
@@ -2150,6 +2189,10 @@ body {
 
 .popover__open {
   display: block;
+}
+
+.popover__close {
+  display: none;
 }
 
 .popover__content {
